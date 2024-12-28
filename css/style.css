@@ -1,0 +1,515 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+    
+   
+
+}
+
+/*Barra de navegacion*/
+
+.barra-nav {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    
+}
+    
+.barra-nav div {
+    margin-left: 70px; 
+}
+
+
+.barra-nav div a img{
+    width: 80px;
+}
+
+.barra-nav nav{
+    text-align: center;  
+    margin-right: 70px;
+}
+
+.barra-nav nav ul {
+    list-style: none;
+    padding-top: 20px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.barra-nav nav ul li{ 
+    margin: 10px;
+}
+
+.barra-nav nav ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: var(--bru-purple);
+    font-size: 22px;
+    border-bottom: 2px solid rgb(131, 72, 209);
+}
+
+.barra-nav nav ul li a:hover {
+    background-color: rgb(131, 72, 209);
+    color: white;
+}
+
+/*Main index*/
+.fondo {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/secion\ de\ psicologia.jpg);
+    text-align: center;
+    background-size: 100%;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.fondo p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.cajas {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 370px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "apartado-1 apartado-2 apartado-3";
+    background-color: #F0EADF;
+    color: black;
+}
+
+.cajas-items{
+    margin: 0px 15px;
+
+}
+.cajas-items p {
+    margin: 10px 0px;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apartado-1{
+    grid-area: apartado-1;
+}
+
+.apartado-2{
+    grid-area: apartado-2;
+}
+
+.apartado-3{
+    grid-area: apartado-3;
+}
+
+.info {
+    width: 100%;
+    height: 1500px;
+    display: block;
+}
+
+.info-items{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.info-items p{
+    margin: 0px 20px;
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info-items img{
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+
+/*boton*/
+.boton .learn-more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    width: 12rem;
+    height: auto;
+    
+}
+.circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+.icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.button-text a {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more:hover .circle {
+    width: 100%;
+}
+
+.learn-more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.learn-more:hover .button-text a {
+    color: #fff;
+}
+
+
+/* main TERAPIA*/
+.portada{
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/especialidades.jpg);
+    text-align: center;
+    background-size: 100%;
+    padding-top: 100px;
+    margin-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.terapias-mas-comunes{
+    text-align: center;
+    margin: 50px 50px;
+}
+.terapias {
+    padding: 30px 0px;
+    padding-left: 50px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+
+.terapiasimg {
+    margin: 10px;
+    height: 180PX;
+    max-width: 100%;
+}
+
+.terapias-items{
+    display: flex;
+    background-color: #F0EADF;
+    width: 600px;
+    height: 200px;
+    
+    align-items: center;
+}
+
+
+.terapias-items p{
+    margin: 0px 20px;
+    font-size: 1.6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* Nosotros */
+.equipo {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/equipo.jpg);
+    text-align: center;
+    background-size: 100%;
+    padding-top: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+
+
+/* Contacto */
+
+.portada-contacto{
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/contacto.png);
+    text-align: center;
+    background-size: 100%;
+    padding-top: 100px;
+    margin-bottom: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.portada-contacto-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+  .portada-contacto-div h1 {
+    background-color: rgba(131, 72, 209, 0.562);
+    color: black;
+    font-size: 3rem;
+}
+
+.formulario{
+    border-radius: 100px;
+    height: 500px;
+    background-color: #F0EADF;
+    text-align: center;
+    margin: 5px 300px 100px 300px;
+    display: block;
+}
+
+.formulario div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+
+}
+.formulario div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+
+/*Footer*/
+.pie{
+    padding-top: 20px;
+    font-size: 1.2rem;
+    background-color: #F0EADF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.pie-items-redes{
+    text-decoration: none;
+}
+.pie-items-redes img{
+    width: 30px;
+    height: 30px;
+    
+}
+.pie-items{
+    text-align: center;
+}
+.pie-items-a img{
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.pie-items a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.pie-items ul {
+    list-style: none;
+}
+
+.pie-items ul li a:hover {
+    background-color: rgb(131, 72, 209);
+    color: white;
+}
+
+/*Index responsive*/
+
+@media screen and (max-width:920px){
+    .info-items1{
+        flex-direction:column ;
+    }
+    .info-items1 img{
+        width: 500px;
+        height: 300px;
+        float: left;
+    }
+}
+@media screen and (max-width:800px) {
+    .barra-nav {
+        flex-direction: column;
+        padding: 0px;
+
+    }
+    .barra-nav nav{
+         
+        margin: 0px;
+    }
+    .barra-nav nav ul {        
+        padding: 0px;
+        justify-content: left;
+        margin: 0px;
+    }
+
+    .barra-nav div {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    .barra-nav nav ul {
+        
+        justify-content: center;
+        
+    }
+    .info {
+        
+        height: 2000px;
+       
+    }
+    .info-items{
+        flex-direction:column ;
+        height: 650px;
+    }
+    
+}
+@media screen and (max-width:774px){
+    .pie{
+        padding-top: 20px;
+        font-size: 1.2rem;
+        background-color: #F0EADF;
+        display: flex;
+        flex-direction: column;   
+    }
+    .pie-items{
+        margin: 10px;
+    }
+    .info{
+        height: 2100px;
+    }
+    .info-items{
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width:603px){
+    .barra-nav{
+        position: static;
+    }
+    .barra-nav nav ul {   
+        padding-top: 0px;  
+        flex-direction: column;
+    }
+    .barra-nav nav ul li{ 
+        margin: 0px;
+    }
+    
+    .barra-nav nav ul li a {
+        padding: 0px;    
+    }
+
+    .cajas {
+        height: 500px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo"
+        "apartado-1"
+        "apartado-2"
+        "apartado-3";
+       
+    }
+    
+   
+    .info-items img{
+        width: auto;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:536px){
+    .info {
+        
+        height: 2200px;
+       
+    }
+}
