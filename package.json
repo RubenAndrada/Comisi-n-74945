@@ -1,0 +1,19 @@
+{
+  "name": "comision-74945",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenAndrada/Comisi-n-74945.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenAndrada/Comisi-n-74945/issues"
+  },
+  "homepage": "https://github.com/RubenAndrada/Comisi-n-74945#readme",
+  "description": ""
+}

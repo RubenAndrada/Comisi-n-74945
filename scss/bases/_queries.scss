@@ -1,0 +1,741 @@
+/*Index responsive*/
+
+@media screen and (max-width:1194px){
+        
+    main .terapias .terapias-items{
+        width: 530px;
+        height: 200px;
+    }
+
+    main .formulario{
+        width: 700px;
+        height: 600px;
+        margin-left: 280px;
+        
+    }
+}
+
+@media screen and (max-width:1145px){
+        
+    main .terapias .terapias-items{
+        width: 500px;
+        height: 190px;
+        .terapiasimg {
+            height: 170PX;
+        }
+    }
+}
+
+@media screen and (max-width:1098px){
+    
+    main .fondo-nosotros{
+        height: 390px;
+        
+        
+       
+    }
+    main .fondo-terapias{
+        height: 390px;
+        
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 390px;
+        
+    }
+        
+    main .terapias .terapias-items{
+        width: 480px;
+        height: 180px;
+        .terapiasimg {
+            height: 160PX;
+        }
+        p{
+            font-size: 24px;
+            
+        }
+    }
+
+    .nosotros{
+        
+        height: 1000px;
+        
+        .nosotros-titulo{
+            
+            font-size: 1.8rem;
+           
+        }
+        
+        
+    }
+    
+}
+
+
+
+@media screen and (max-width:1035px){
+    main .portada-contacto{
+        
+        height: 360px;
+        
+    }
+    main .fondo-terapias{
+        height: 360px;
+        
+        
+       
+    }
+    main .terapias .terapias-items{
+        width: 440px;
+        height: 160px;
+        .terapiasimg {
+            height: 140PX;
+        }
+        p{
+            font-size: 23px;
+            
+        }
+    }
+    main .fondo-nosotros{
+        height: 360px;
+    }
+    main .formulario{
+        
+        margin-left: 150px;
+        
+    }
+}
+
+@media screen and (max-width:947px){
+    main .formulario{
+        
+        margin-left: 100px;
+        
+    }
+        
+    main .terapias .terapias-items{
+        width: 420px;
+        height: 150px;
+        .terapiasimg {
+            height: 130PX;
+        }
+        p{
+            font-size: 22px;
+            
+        }
+    }
+    .nosotros{
+        
+        height: 1100px;
+        
+        .nosotros-titulo{
+            
+            font-size: 1.8rem;
+           
+        }
+        
+        
+    }
+    main .fondo-nosotros{
+        height: 340px;
+    }
+    main .fondo-terapias{
+        height: 340px;
+        
+        
+       
+    }
+    main .portada-contacto{
+        padding-top: 50px;
+        height: 340px;
+        
+        
+    }
+}
+
+@media screen and (max-width:921px){
+    main .fondo{
+        height: 480px;
+       
+    }
+    main .info {
+        height: 1500px;
+        .info-items1{
+            flex-direction:column ;
+            img{
+            width: 500px;
+            height: 300px;
+            float: left;
+        
+            }
+        }
+    }
+    main .info .info-items .boton .parrafoinfo{
+        font-size: 25px;
+    }
+    
+    main .terapias .terapias-items{
+        width: 400px;
+        height: 140px;
+        .terapiasimg {
+            height: 120PX;
+        }
+        p{
+            font-size: 22px;
+            
+        }
+    }
+}
+
+@media screen and (max-width:875px){
+    main .fondo-nosotros{
+        height: 320px;
+    }
+    main .fondo-terapias{
+        height: 320px;
+        
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 320px;
+        
+    }
+    main .terapias .terapias-items{
+        width: 380px;
+        height: 140px;
+        .terapiasimg {
+            height: 120PX;
+        }
+        p{
+            font-size: 21px;
+            
+        }
+    }
+}
+
+@media screen and (max-width:829px){
+
+    main .fondo-nosotros{
+        height: 300px;
+    }
+    main .fondo-terapias{
+        height: 300px;
+        
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 300px;
+        
+    }
+    main .terapias .terapias-items{
+        width: 360px;
+        height: 130px;
+        .terapiasimg {
+            height: 110PX;
+        }
+        p{
+            font-size: 20px;
+            
+        }
+    }
+    .nosotros{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.4rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.6rem;
+           
+        }
+        
+        
+    }
+    main .formulario{
+        
+        margin-left: 70px;
+        
+    }
+}
+@media screen and (max-width:800px) {
+    main .fondo{
+        height: 440px;
+       
+    }
+    .barra-nav {
+        flex-direction: column;
+        padding: 0px;
+        nav{
+         
+            margin: 0px;
+            ul {        
+                padding: 0px;
+                justify-content: left;
+                margin: 0px;
+                justify-content: center;
+            }
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+    }
+    
+    main .info {
+        height: 2000px;
+        .info-items{
+            flex-direction:column ;
+            height: 600px;
+            margin-bottom: 50px;
+            
+        }
+       
+    }
+    main .terapias{
+        display: flex;
+        flex-direction: column;
+        .terapias-items{
+            width: 600px;
+            height: 200px;
+            .terapiasimg {
+                margin: 10px;
+                height: 180PX;
+                max-width: 100%;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+    main .row .col-4 .list-group{
+        
+        top:150px;
+    }
+    
+}
+//* min-height: 325px  background-size: cover; background-position: center center;
+    /* opacity: 0.5; */
+   //* transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+@media screen and (max-width:774px){
+    main .fondo-nosotros{
+        height: 280px;
+    }
+    main .fondo-terapias{
+        height: 280px;
+        
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 280px;
+        
+    }
+    main .fondo{
+        height: 400px;
+        padding-top: 30px;
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 25px;
+        }
+       
+    }
+    .pie{
+        padding-top: 20px;
+        font-size: 1.2rem;
+        background-color: #F0EADF;
+        display: flex;
+        flex-direction: column;   
+    }
+    .pie-items{
+        margin: 10px;
+    }
+
+    
+    
+    main .info .info-items .boton .parrafoinfo{
+        font-size: 22px;
+    }
+    .nosotros{
+        
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.3rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.4rem;
+           
+        }
+        
+        
+    }
+
+    main .formulario{
+        width: 600px;
+        margin-left: 50px;
+        form div{
+            padding-top: 20px;
+            margin-left: 150px;
+            margin-top: 20px;
+            
+        }
+        
+    }
+    
+
+}
+@media screen and (max-width:700px){
+    main .fondo-nosotros{
+        height: 260px;
+        h1{
+            font-size: 40px;
+        }
+    }
+    main .fondo-terapias{
+        height: 280px;
+        h1{
+            font-size: 40px;
+        }
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 260px;
+        
+    }
+    main .fondo{
+        height: 350px;
+       
+    }
+    main .terapias .terapias-items{
+        width: 500px;
+        height: 190px;
+        .terapiasimg {
+            height: 170PX;
+        }
+    }
+    .nosotros{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.3rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.3rem;
+           
+        }
+        
+        
+    }
+    main .formulario{
+        width: 550px;
+        margin-left: 30px;
+        form div{
+            margin-left: 130px;
+            margin-top: 20px;
+            
+        }
+    }
+}
+@media screen and (max-width:603px){
+    main .fondo-nosotros{
+        height: 240px;
+        h1{
+            font-size: 35px;
+        }
+    }
+    main .fondo-terapias{
+        height: 240px;
+        h1{
+            font-size: 35px;
+        }
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 240px;
+        
+    }
+    main .fondo{
+        height: 300px;
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 20px;
+        }
+       
+    }
+    .barra-nav{
+        position: static;
+        
+    }
+    .barra-nav nav ul {   
+        padding-top: 0px;  
+        flex-direction: column;
+    }
+    .barra-nav nav ul li{ 
+        margin: 0px;
+    }
+    
+    .barra-nav nav ul li a {
+        padding: 0px;
+        font-size: 20px;    
+    }
+
+    main .cajas {
+        height: 500px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "titulo"
+        "apartado-1"
+        "apartado-2"
+        "apartado-3";
+       
+    }
+    main .info {
+        height: 1800px;
+        .info-items{
+            flex-direction:column ;
+            height: 600px;
+            margin-bottom: 0px;
+            
+        }
+       
+    }
+    
+    main .info .info-items .boton .parrafoinfo{
+        font-size: 20px;
+    }
+   
+    main .info .info-items img{
+        width: auto;
+        height: 300px;
+    }
+
+    main .terapias{
+        padding: 20px 0px;
+        .terapias-items{
+            width: 480px;
+            height: 180px;
+            .terapiasimg {
+                height: 160PX;
+            }
+            p{
+                font-size: 24px;
+            
+            }
+        }
+    }
+
+    main .formulario{
+        width: 500px;
+        height: 550px;
+        margin-left: 50px;
+        form div{
+            margin-left: 100px;
+            
+            
+        }
+       
+        
+    }
+    main .row .col-4 .list-group{
+        
+        top:10px;
+    }
+}
+
+@media screen and (max-width:536px){
+    main .fondo-nosotros{
+        height: 220px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    main .fondo-terapias{
+        height: 220px;
+        h1{
+            font-size: 30px;
+        }
+        
+       
+    }
+    main .portada-contacto{
+        padding-top: 20px;
+        height: 220px;
+        
+    }
+    main .fondo{
+        height: 260px;
+       
+    }
+    main .terapias .terapias-items{
+        width: 400px;
+        height: 140px;
+        .terapiasimg {
+            height: 120PX;
+        }
+        p{
+            font-size: 22px;
+            
+        }
+    }
+    .nosotros{
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.3rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.3rem;
+           
+        }
+        
+        
+    }
+    main .formulario{
+        width: 400px;
+       
+        form div{
+            margin-left: 100px;
+            width: 200px;
+            
+        }
+    
+        
+    }
+    main .row .col-4 .list-group a{
+        
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:455px){
+    main .fondo-nosotros{
+        height: 200px;
+        h1{
+            font-size: 25px;
+        }
+    }
+    main .fondo-terapias{
+        height: 200px;
+        h1{
+            font-size: 25px;
+        }
+        
+       
+    }
+    main .portada-contacto{
+        
+        height: 200px;
+        
+    }
+    .nosotros{
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.3rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.2rem;
+           
+        }
+        
+    }
+    main .formulario{
+        width: 350px;
+       margin-left: 30px;
+        form div{
+            margin-left: 80px;
+            width: 180px;
+            font-size: 1rem;
+            
+        }
+    
+        
+    }
+}
+
+@media screen and (max-width:433px){
+    main .info {
+        height: 1850px;
+    }
+    main .info .info-items img{
+        width: auto;
+        height: 278px;
+    }
+    main .terapias .terapias-items{
+        width: 340px;
+        height: 120px;
+        .terapiasimg {
+            height: 100PX;
+        }
+        p{
+            font-size: 18px;
+            
+        }
+    }
+    .pie .pie-items p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:401px){
+    .nosotros{
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        .nosotros-items h3{
+            font-size: 1.3rem;
+        }
+        
+        .nosotros-titulo{
+            
+            font-size: 1.1rem;
+           
+        }
+        
+    }
+
+    main .formulario{
+        width: 300px;
+       margin-left: 30px;
+        form div{
+            margin-left: 80px;
+            width: 160px;
+            
+        }
+    
+        
+    }
+}

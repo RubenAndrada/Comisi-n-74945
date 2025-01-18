@@ -1,0 +1,40 @@
+/*Footer*/
+
+.pie{
+    padding-top: 20px;
+    font-size: 1.2rem;
+    background-color: $color-principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .pie-items{
+        text-align: center;
+        .pie-items-a{ 
+            img{
+                text-decoration: none;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .pie-items-redes{
+            text-decoration: none;
+            img{
+                width: 30px;
+                height: 30px;  
+            }
+        }
+        ul {
+            list-style: none;
+            li {
+                a:hover {
+                    background-color: $color-secundario;
+                    color: white;
+                }
+            }
+        }
+    }
+}

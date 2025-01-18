@@ -1,0 +1,966 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/*Barra de navegacion*/
+.barra-nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  margin-top: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+.barra-nav div {
+  margin-left: 70px;
+}
+.barra-nav div a img {
+  width: 80px;
+}
+
+nav {
+  text-align: center;
+  margin-right: 70px;
+}
+nav ul {
+  list-style: none;
+  padding-top: 20px;
+  justify-content: flex-end;
+  display: flex;
+}
+nav ul li {
+  margin: 10px;
+}
+nav ul li a {
+  font-weight: bolder;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  color: var(--bru-purple);
+  font-size: 22px;
+  border-bottom: 2px solid rgba(131, 72, 209, 0.89);
+}
+nav ul li a:hover {
+  background-color: rgba(131, 72, 209, 0.89);
+  color: white;
+}
+
+/*Main index*/
+main .fondo {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/secion\ de\ psicologia.jpg);
+  background-position: center center;
+  text-align: center;
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .fondo h1 {
+  margin: 0%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  font-size: 30px;
+}
+main .cajas {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  height: 370px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo titulo" "apartado-1 apartado-2 apartado-3";
+  background-color: #F0EADF;
+  color: black;
+}
+main .cajas .cajas-items {
+  margin: 0px 15px;
+}
+main .cajas .cajas-items p {
+  margin: 10px 0px;
+}
+main .cajas .titulo {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .cajas .apartado-1 {
+  grid-area: apartado-1;
+}
+main .cajas .apartado-2 {
+  grid-area: apartado-2;
+}
+main .cajas .apartado-3 {
+  grid-area: apartado-3;
+}
+main .terapias-mas-comunes {
+  margin: 40px;
+  text-align: center;
+}
+main .info {
+  width: 100%;
+  height: 1500px;
+  display: block;
+}
+main .info .info-items {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+main .info .info-items .boton p {
+  margin: 0px 20px;
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .info .info-items .boton .learn-more {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 12rem;
+  height: auto;
+}
+main .info .info-items .boton .learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+main .info .info-items .boton .learn-more .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+main .info .info-items .boton .learn-more .icon::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+main .info .info-items .boton .learn-more .button-text a {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .info .info-items .boton .learn-more .button-text a:hover {
+  color: #fff;
+}
+main .info .info-items .boton .learn-more:hover .circle {
+  width: 100%;
+}
+main .info .info-items .boton .learn-more:hover .circle .icon {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+main .info .info-items img {
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+
+/* main TERAPIA*/
+main .fondo-terapias {
+  background-image: url(../../img/tipos-de-terapia.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .fondo-terapias h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
+  color: white;
+  font-size: 3rem;
+}
+main .terapias {
+  padding: 30px 0px;
+  padding-left: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+}
+main .terapias .terapias-items {
+  display: flex;
+  background-color: #F0EADF;
+  width: 600px;
+  height: 200px;
+  align-items: center;
+}
+main .terapias .terapias-items .terapiasimg {
+  margin: 10px;
+  height: 180PX;
+  max-width: 100%;
+}
+main .terapias .terapias-items p {
+  margin: 0px 20px;
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.especialidades-portada {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-group {
+  position: sticky;
+  top: 100px;
+}
+
+/* Main NOSOTROS*/
+.fondo-nosotros {
+  background-image: url(../../img/Nuestro-equipo-de-psicologos.jpg);
+  width: 100%;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo-nosotros h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
+  color: white;
+  font-size: 3rem;
+}
+
+.nosotros {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo titulo" "apartado-1 apartado-2 apartado-3";
+  background-color: white;
+  line-height: 1.5;
+}
+.nosotros .nosotros-items {
+  color: #727C81;
+  margin: 0px 15px;
+}
+.nosotros .nosotros-items h3 {
+  color: rgba(131, 72, 209, 0.89);
+  font-size: 2rem;
+}
+.nosotros .nosotros-items p {
+  margin: 10px 0px;
+}
+.nosotros .nosotros-titulo {
+  grid-area: titulo;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgba(131, 72, 209, 0.89);
+}
+.nosotros .nosotros-1 {
+  grid-area: apartado-1;
+}
+.nosotros .nosotros-2 {
+  grid-area: apartado-2;
+}
+.nosotros .nosotros-3 {
+  grid-area: apartado-3;
+}
+
+/* Main Contacto */
+main .portada-contacto {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/contacto.jpg);
+  text-align: center;
+  background-size: 100%;
+  padding-top: 100px;
+  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+main .portada-contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+main .portada-contacto div h1 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
+  color: white;
+  font-size: 3rem;
+}
+main .formulario {
+  border-radius: 100px;
+  height: 600px;
+  background-color: #F0EADF;
+  text-align: center;
+  margin: 5px 300px 100px 300px;
+  display: block;
+}
+main .formulario div {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  padding-top: 20px;
+  margin-left: 30%;
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+}
+main .formulario div input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+/*Footer*/
+.pie {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  background-color: #F0EADF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pie .pie-items {
+  text-align: center;
+}
+.pie .pie-items .pie-items-a img {
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.pie .pie-items a {
+  text-decoration: none;
+  color: black;
+}
+.pie .pie-items .pie-items-redes {
+  text-decoration: none;
+}
+.pie .pie-items .pie-items-redes img {
+  width: 30px;
+  height: 30px;
+}
+.pie .pie-items ul {
+  list-style: none;
+}
+.pie .pie-items ul li a:hover {
+  background-color: rgba(131, 72, 209, 0.89);
+  color: white;
+}
+
+/*Index responsive*/
+@media screen and (max-width: 1194px) {
+  main .terapias .terapias-items {
+    width: 530px;
+    height: 200px;
+  }
+  main .formulario {
+    width: 700px;
+    height: 600px;
+    margin-left: 280px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  main .terapias .terapias-items {
+    width: 500px;
+    height: 190px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 170PX;
+  }
+}
+@media screen and (max-width: 1098px) {
+  main .fondo-nosotros {
+    height: 390px;
+  }
+  main .fondo-terapias {
+    height: 390px;
+  }
+  main .portada-contacto {
+    height: 390px;
+  }
+  main .terapias .terapias-items {
+    width: 480px;
+    height: 180px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 160PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 24px;
+  }
+  .nosotros {
+    height: 1000px;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1035px) {
+  main .portada-contacto {
+    height: 360px;
+  }
+  main .fondo-terapias {
+    height: 360px;
+  }
+  main .terapias .terapias-items {
+    width: 440px;
+    height: 160px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 140PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 23px;
+  }
+  main .fondo-nosotros {
+    height: 360px;
+  }
+  main .formulario {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 947px) {
+  main .formulario {
+    margin-left: 100px;
+  }
+  main .terapias .terapias-items {
+    width: 420px;
+    height: 150px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 130PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 22px;
+  }
+  .nosotros {
+    height: 1100px;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.8rem;
+  }
+  main .fondo-nosotros {
+    height: 340px;
+  }
+  main .fondo-terapias {
+    height: 340px;
+  }
+  main .portada-contacto {
+    padding-top: 50px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 921px) {
+  main .fondo {
+    height: 480px;
+  }
+  main .info {
+    height: 1500px;
+  }
+  main .info .info-items1 {
+    flex-direction: column;
+  }
+  main .info .info-items1 img {
+    width: 500px;
+    height: 300px;
+    float: left;
+  }
+  main .info .info-items .boton .parrafoinfo {
+    font-size: 25px;
+  }
+  main .terapias .terapias-items {
+    width: 400px;
+    height: 140px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 120PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 875px) {
+  main .fondo-nosotros {
+    height: 320px;
+  }
+  main .fondo-terapias {
+    height: 320px;
+  }
+  main .portada-contacto {
+    height: 320px;
+  }
+  main .terapias .terapias-items {
+    width: 380px;
+    height: 140px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 120PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 829px) {
+  main .fondo-nosotros {
+    height: 300px;
+  }
+  main .fondo-terapias {
+    height: 300px;
+  }
+  main .portada-contacto {
+    height: 300px;
+  }
+  main .terapias .terapias-items {
+    width: 360px;
+    height: 130px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 110PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 20px;
+  }
+  .nosotros {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.4rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.6rem;
+  }
+  main .formulario {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .fondo {
+    height: 440px;
+  }
+  .barra-nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .barra-nav nav {
+    margin: 0px;
+  }
+  .barra-nav nav ul {
+    padding: 0px;
+    justify-content: left;
+    margin: 0px;
+    justify-content: center;
+  }
+  .barra-nav div {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  main .info {
+    height: 2000px;
+  }
+  main .info .info-items {
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 50px;
+  }
+  main .terapias {
+    display: flex;
+    flex-direction: column;
+  }
+  main .terapias .terapias-items {
+    width: 600px;
+    height: 200px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    margin: 10px;
+    height: 180PX;
+    max-width: 100%;
+  }
+  main .terapias .terapias-items p {
+    font-size: 1.6rem;
+  }
+  main .row .col-4 .list-group {
+    top: 150px;
+  }
+}
+/* opacity: 0.5; */
+@media screen and (max-width: 774px) {
+  main .fondo-nosotros {
+    height: 280px;
+  }
+  main .fondo-terapias {
+    height: 280px;
+  }
+  main .portada-contacto {
+    height: 280px;
+  }
+  main .fondo {
+    height: 400px;
+    padding-top: 30px;
+  }
+  main .fondo h1 {
+    font-size: 25px;
+  }
+  main .fondo h2 {
+    font-size: 25px;
+  }
+  .pie {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    background-color: #F0EADF;
+    display: flex;
+    flex-direction: column;
+  }
+  .pie-items {
+    margin: 10px;
+  }
+  main .info .info-items .boton .parrafoinfo {
+    font-size: 22px;
+  }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.3rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.4rem;
+  }
+  main .formulario {
+    width: 600px;
+    margin-left: 50px;
+  }
+  main .formulario form div {
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .fondo-nosotros {
+    height: 260px;
+  }
+  main .fondo-nosotros h1 {
+    font-size: 40px;
+  }
+  main .fondo-terapias {
+    height: 280px;
+  }
+  main .fondo-terapias h1 {
+    font-size: 40px;
+  }
+  main .portada-contacto {
+    height: 260px;
+  }
+  main .fondo {
+    height: 350px;
+  }
+  main .terapias .terapias-items {
+    width: 500px;
+    height: 190px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 170PX;
+  }
+  .nosotros {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.3rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.3rem;
+  }
+  main .formulario {
+    width: 550px;
+    margin-left: 30px;
+  }
+  main .formulario form div {
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 603px) {
+  main .fondo-nosotros {
+    height: 240px;
+  }
+  main .fondo-nosotros h1 {
+    font-size: 35px;
+  }
+  main .fondo-terapias {
+    height: 240px;
+  }
+  main .fondo-terapias h1 {
+    font-size: 35px;
+  }
+  main .portada-contacto {
+    height: 240px;
+  }
+  main .fondo {
+    height: 300px;
+  }
+  main .fondo h1 {
+    font-size: 20px;
+  }
+  main .fondo h2 {
+    font-size: 20px;
+  }
+  .barra-nav {
+    position: static;
+  }
+  .barra-nav nav ul {
+    padding-top: 0px;
+    flex-direction: column;
+  }
+  .barra-nav nav ul li {
+    margin: 0px;
+  }
+  .barra-nav nav ul li a {
+    padding: 0px;
+    font-size: 20px;
+  }
+  main .cajas {
+    height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo" "apartado-1" "apartado-2" "apartado-3";
+  }
+  main .info {
+    height: 1800px;
+  }
+  main .info .info-items {
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 0px;
+  }
+  main .info .info-items .boton .parrafoinfo {
+    font-size: 20px;
+  }
+  main .info .info-items img {
+    width: auto;
+    height: 300px;
+  }
+  main .terapias {
+    padding: 20px 0px;
+  }
+  main .terapias .terapias-items {
+    width: 480px;
+    height: 180px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 160PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 24px;
+  }
+  main .formulario {
+    width: 500px;
+    height: 550px;
+    margin-left: 50px;
+  }
+  main .formulario form div {
+    margin-left: 100px;
+  }
+  main .row .col-4 .list-group {
+    top: 10px;
+  }
+}
+@media screen and (max-width: 536px) {
+  main .fondo-nosotros {
+    height: 220px;
+  }
+  main .fondo-nosotros h1 {
+    font-size: 30px;
+  }
+  main .fondo-terapias {
+    height: 220px;
+  }
+  main .fondo-terapias h1 {
+    font-size: 30px;
+  }
+  main .portada-contacto {
+    padding-top: 20px;
+    height: 220px;
+  }
+  main .fondo {
+    height: 260px;
+  }
+  main .terapias .terapias-items {
+    width: 400px;
+    height: 140px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 120PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 22px;
+  }
+  .nosotros {
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.3rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.3rem;
+  }
+  main .formulario {
+    width: 400px;
+  }
+  main .formulario form div {
+    margin-left: 100px;
+    width: 200px;
+  }
+  main .row .col-4 .list-group a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 455px) {
+  main .fondo-nosotros {
+    height: 200px;
+  }
+  main .fondo-nosotros h1 {
+    font-size: 25px;
+  }
+  main .fondo-terapias {
+    height: 200px;
+  }
+  main .fondo-terapias h1 {
+    font-size: 25px;
+  }
+  main .portada-contacto {
+    height: 200px;
+  }
+  .nosotros {
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.3rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.2rem;
+  }
+  main .formulario {
+    width: 350px;
+    margin-left: 30px;
+  }
+  main .formulario form div {
+    margin-left: 80px;
+    width: 180px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 433px) {
+  main .info {
+    height: 1850px;
+  }
+  main .info .info-items img {
+    width: auto;
+    height: 278px;
+  }
+  main .terapias .terapias-items {
+    width: 340px;
+    height: 120px;
+  }
+  main .terapias .terapias-items .terapiasimg {
+    height: 100PX;
+  }
+  main .terapias .terapias-items p {
+    font-size: 18px;
+  }
+  .pie .pie-items p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 401px) {
+  .nosotros {
+    height: 1850px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros .nosotros-items h3 {
+    font-size: 1.3rem;
+  }
+  .nosotros .nosotros-titulo {
+    font-size: 1.1rem;
+  }
+  main .formulario {
+    width: 300px;
+    margin-left: 30px;
+  }
+  main .formulario form div {
+    margin-left: 80px;
+    width: 160px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
