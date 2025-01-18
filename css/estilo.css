@@ -247,6 +247,7 @@ main .terapias .terapias-items p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* ESPECIALIDADES */
 .fondo-especialidades {
   background-image: url(../img/especialidades.jpg);
   width: 100%;
